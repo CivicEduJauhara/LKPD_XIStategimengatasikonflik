@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD Interaktif Strategi Resolusi Konflik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .print-only { display: none; }
+        @media print {
+            .no-print { display: none; }
+            .print-only { display: block; }
+            .card { border: 1px solid #ccc; box-shadow: none; }
+            input, textarea, select { border: 1px solid #000 !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden border border-slate-200">
+        <!-- Header -->
+        <div class="bg-indigo-700 p-6 text-white text-center">
+            <h1 class="text-2xl md:text-3xl font-bold uppercase tracking-wide">Lembar Kerja Peserta Didik (LKPD)</h1>
+            <p class="mt-2 opacity-90 text-sm md:text-base">Strategi Mengatasi Konflik dalam Keberagaman Masyarakat Indonesia</p>
+            <div class="mt-4 flex flex-wrap justify-center gap-4 text-xs font-semibold uppercase">
+                <span class="bg-indigo-800 px-3 py-1 rounded-full border border-indigo-400 text-white">Kelas XI</span>
+                <span class="bg-indigo-800 px-3 py-1 rounded-full border border-indigo-400 text-white">Fase F</span>
+                <span class="bg-indigo-800 px-3 py-1 rounded-full border border-indigo-400 text-white">Diskusi Kelompok</span>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-10 space-y-8">
+            <!-- Bagian Identitas -->
+            <section class="bg-slate-100 p-6 rounded-xl border-l-4 border-indigo-600">
+                <h2 class="text-lg font-bold text-indigo-800 mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    IDENTITAS KELOMPOK
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Nama Kelompok</label>
+                        <input type="text" placeholder="Masukkan nama kelompok..." class="w-full p-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none bg-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Anggota Kelompok</label>
+                        <textarea rows="2" placeholder="Siswa 1, Siswa 2, ..." class="w-full p-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none bg-white"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian 1: Eksplorasi Konsep -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                    <span class="bg-indigo-600 text-white w-8 h-8 rounded-full inline-flex items-center justify-center mr-3 text-sm">1</span>
+                    Eksplorasi Konsep (Quick Review)
+                </h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse border border-slate-200 shadow-sm rounded-lg overflow-hidden">
+                        <thead class="bg-slate-50 text-slate-700">
+                            <tr>
+                                <th class="border border-slate-200 p-3 text-left w-1/4">Strategi</th>
+                                <th class="border border-slate-200 p-3 text-left">Definisi / Langkah Nyata Kelompok</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-slate-200 p-3 font-bold text-indigo-700 bg-indigo-50/50">PREVENTIF</td>
+                                <td class="border border-slate-200 p-0">
+                                    <textarea class="w-full p-3 min-h-[80px] border-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 outline-none" placeholder="Langkah pencegahan sebelum konflik terjadi..."></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 p-3 font-bold text-orange-700 bg-orange-50/50">REPRESIF</td>
+                                <td class="border border-slate-200 p-0">
+                                    <textarea class="w-full p-3 min-h-[80px] border-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 outline-none" placeholder="Tindakan tegas saat konflik sedang berlangsung..."></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-slate-200 p-3 font-bold text-green-700 bg-green-50/50">KURATIF</td>
+                                <td class="border border-slate-200 p-0">
+                                    <textarea class="w-full p-3 min-h-[80px] border-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 outline-none" placeholder="Upaya pemulihan pasca konflik..."></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Bagian Baru: Pilihan Studi Kasus -->
+            <section class="bg-amber-50 p-6 rounded-xl border border-amber-200">
+                <h2 class="text-xl font-bold text-amber-800 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    PILIHAN STUDI KASUS
+                </h2>
+                <p class="text-sm text-amber-700 mb-4 italic font-medium text-indigo-900">Pilihlah salah satu skenario di bawah ini untuk dianalisis oleh kelompok Anda:</p>
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-white p-4 rounded-lg border border-amber-300 shadow-sm">
+                        <input type="radio" id="kasus1" name="pilih_kasus" class="hidden peer" checked>
+                        <label for="kasus1" class="flex flex-col cursor-pointer peer-checked:border-indigo-600 peer-checked:ring-2 peer-checked:ring-indigo-500 rounded-md p-2 transition-all">
+                            <span class="font-bold text-indigo-700">Opsi A: Perang "Hoaks" di Media Sosial</span>
+                            <span class="text-sm text-slate-600 mt-1">Sebuah berita palsu (hoaks) tentang penghinaan simbol agama viral di grup WhatsApp warga. Hal ini menyebabkan dua kelompok pemuda di sebuah desa saling tantang dan mulai berjaga-jaga dengan senjata tajam.</span>
+                        </label>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg border border-amber-300 shadow-sm">
+                        <input type="radio" id="kasus2" name="pilih_kasus" class="hidden peer">
+                        <label for="kasus2" class="flex flex-col cursor-pointer peer-checked:border-indigo-600 peer-checked:ring-2 peer-checked:ring-indigo-500 rounded-md p-2 transition-all">
+                            <span class="font-bold text-indigo-700">Opsi B: Dilema Pendirian Rumah Ibadah</span>
+                            <span class="text-sm text-slate-600 mt-1">Sekelompok masyarakat keberatan dengan rencana pembangunan rumah ibadah agama minoritas di lingkungan mereka karena alasan administratif dan kekhawatiran gangguan ketenangan, meskipun izin IMB sudah dalam proses.</span>
+                        </label>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg border border-amber-300 shadow-sm">
+                        <input type="radio" id="kasus3" name="pilih_kasus" class="hidden peer">
+                        <label for="kasus3" class="flex flex-col cursor-pointer peer-checked:border-indigo-600 peer-checked:ring-2 peer-checked:ring-indigo-500 rounded-md p-2 transition-all">
+                            <span class="font-bold text-indigo-700">Opsi C: Konflik Tradisi vs Pendatang</span>
+                            <span class="text-sm text-slate-600 mt-1">Masyarakat asli di sebuah desa wisata merasa terganggu dengan perilaku wisatawan dan pendatang baru yang dianggap tidak menghormati adat istiadat setempat (cara berpakaian dan jam malam), memicu ketegangan fisik di pintu masuk desa.</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian 2: Analisis Strategi -->
+            <section>
+                <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                    <span class="bg-indigo-600 text-white w-8 h-8 rounded-full inline-flex items-center justify-center mr-3 text-sm">2</span>
+                    Analisis Strategi Kelompok
+                </h2>
+                
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="p-5 border border-slate-200 rounded-xl bg-white shadow-sm">
+                        <h3 class="font-bold text-slate-800 mb-2 text-sm flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"></path></svg>
+                            AKAR PERMASALAHAN
+                        </h3>
+                        <p class="text-xs text-slate-500 mb-3 italic">Berdasarkan kasus yang dipilih, mengapa konflik tersebut terjadi?</p>
+                        <textarea rows="4" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none bg-slate-50" placeholder="Jelaskan faktor penyebabnya..."></textarea>
+                    </div>
+
+                    <div class="p-5 border border-indigo-200 bg-indigo-50/20 rounded-xl">
+                        <h3 class="font-bold text-indigo-800 mb-4 text-sm flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.047a1 1 0 01.974 0l7 4A1 1 0 0119.774 6.74L12.44 10.93a1 1 0 01-.974 0L4.226 6.74a1 1 0 01.5-.947l7-4zM5.556 8.12L11 11.231V18.15l-5.444-3.11a1 1 0 01-.556-.89V9.01a1 1 0 01.556-.89zM13 18.15v-6.919l5.444-3.11a1 1 0 01.556.89V14.15a1 1 0 01-.556.89L13 18.15z" clip-rule="evenodd"></path></svg>
+                            RENCANA AKSI RESOLUSI KONFLIK
+                        </h3>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-xs font-bold text-indigo-700 mb-1 uppercase tracking-tighter">A. Strategi Preventif</label>
+                                <p class="text-[10px] text-slate-500 mb-2 italic">(Apa yang seharusnya dilakukan sebelum ketegangan muncul?)</p>
+                                <textarea rows="2" class="w-full p-3 border border-slate-300 rounded-lg outline-none focus:ring-2 focus:ring-indigo-500 text-sm bg-white"></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-indigo-700 mb-1 uppercase tracking-tighter">B. Strategi Represif</label>
+                                <p class="text-[10px] text-slate-500 mb-2 italic">(Bagaimana tindakan tegas hukum/keamanan saat kejadian berlangsung?)</p>
+                                <textarea rows="2" class="w-full p-3 border border-slate-300 rounded-lg outline-none focus:ring-2 focus:ring-indigo-500 text-sm bg-white"></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-indigo-700 mb-1 uppercase tracking-tighter">C. Strategi Kuratif</label>
+                                <p class="text-[10px] text-slate-500 mb-2 italic">(Bagaimana cara memulihkan hubungan masyarakat setelah konflik usai?)</p>
+                                <textarea rows="2" class="w-full p-3 border border-slate-300 rounded-lg outline-none focus:ring-2 focus:ring-indigo-500 text-sm bg-white"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian Refleksi -->
+            <section class="bg-slate-800 p-6 rounded-xl text-white">
+                <h2 class="text-lg font-bold mb-4 flex items-center border-b border-slate-600 pb-2">
+                    <svg class="w-5 h-5 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    REFLEKSI AKHIR
+                </h2>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-sm font-medium text-slate-300 mb-2">1. Apakah solusi yang kelompok kalian buat sudah mencerminkan prinsip keadilan bagi semua pihak? Jelaskan.</p>
+                        <textarea rows="3" class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg outline-none focus:ring-2 focus:ring-indigo-500 text-sm text-white"></textarea>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-slate-300 mb-2">2. Apa peran terpenting kalian sebagai pelajar XI SMA untuk mencegah kasus pilihan kalian terjadi di lingkungan nyata?</p>
+                        <textarea rows="3" class="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg outline-none focus:ring-2 focus:ring-indigo-500 text-sm text-white"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer & Aksi -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 no-print py-4">
+                <div class="text-slate-500 text-xs text-center md:text-left">
+                    <p class="font-bold">Materi: Keselarasan dalam Keberagaman</p>
+                    <p>© Pendidikan Pancasila Kelas XI</p>
+                </div>
+                <button onclick="window.print()" class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-indigo-700 flex items-center shadow-lg transition-transform hover:scale-105 active:scale-95">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    CETAK HASIL DISKUSI (PDF)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instruksi Guru -->
+    <div class="max-w-4xl mx-auto mt-8 p-6 bg-white rounded-xl border-2 border-dashed border-slate-300 no-print">
+        <h4 class="font-bold text-slate-800 mb-2 uppercase text-xs">Instruksi Guru:</h4>
+        <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1">
+            <li>Siswa berdiskusi dalam kelompok 4-5 orang.</li>
+            <li>Siswa memilih satu dari tiga kasus di atas menggunakan tombol radio.</li>
+            <li>Setelah selesai mengisi, minta siswa menekan tombol "Cetak" dan simpan sebagai PDF untuk dikumpulkan ke LMS atau dicetak fisik.</li>
+            <li>Pastikan siswa menganalisis akar masalah secara mendalam sebelum menyusun strategi.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
